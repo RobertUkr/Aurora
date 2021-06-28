@@ -1,0 +1,135 @@
+@media (max-width: 415px) {
+  .header {
+    &__mobile {
+      display: block;
+      &-btn-burger {
+        width: 20px;
+        height: 15px;
+        margin-right: 16px;
+        cursor: pointer;
+      }
+      &-btn-search {
+        width: 18px;
+        height: 18px;
+        cursor: pointer;
+      }
+      &-btn-basket {
+        width: 16px;
+        height: 24px;
+        position: relative;
+        margin-right: 32px;
+
+        &::after {
+          content: "99";
+          position: absolute;
+          width: 22px;
+          height: 22px;
+          background-color: #f2da91;
+          border-radius: 50%;
+          color: #333;
+          text-align: center;
+          padding-top: 3px;
+          bottom: 0;
+          right: -32px;
+          margin: auto 0;
+          font-size: 11px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    &__main-box {
+      height: 480px;
+      background-position: 64% 50%;
+      margin-bottom: 24px;
+    }
+    &__top {
+      display: none;
+    }
+    &__input-frame {
+      display: none;
+    }
+    &__input {
+      &::after {
+        display: none;
+      }
+    }
+    &__sign-in-link {
+      display: none;
+    }
+    &__register-link {
+      display: none;
+    }
+    &__logo-name {
+      display: none;
+    }
+    &__navigation-list {
+      display: none;
+    }
+    &__title-text {
+      display: none;
+    }
+  }
+  .feedback__text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .footer {
+    &__inner {
+      display: none;
+    }
+    &__mobile {
+      display: block;
+      &-inner {
+        padding: 0 16px 24px 16px;
+        &-list-item {
+          padding: 12px 28px 12px 16px;
+          border-bottom: 1px solid #e1e0e1;
+          position: relative;
+          &::after {
+            content: "";
+            position: absolute;
+            background-image: url(../images/mobile-icons/chevron-down.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 12px;
+            height: 8px;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            margin: auto 0;
+            cursor: pointer;
+          }
+          &-link {
+            font-family: "Cormorant Garamond", sans-serif;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 16px;
+            line-height: 19px;
+            letter-spacing: 1px;
+            color: #000000;
+          }
+        }
+      }
+    }
+    &__inner-list-social {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    &__inner-list-item {
+      margin-left: 24px;
+      width: 19px;
+      height: 19px;
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .feedback__text {
+    font-size: 10px;
+    line-height: 16px;
+  }
+}
